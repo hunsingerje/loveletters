@@ -1,0 +1,420 @@
+@font-face {
+  font-family: "schoolbook";
+  src: url("https://cdn.glitch.com/67e817ac-80a4-4ce2-87f4-9136c782f220%2FCentury%20Schoolbook%20Monospace.woff?v=1587934636495")
+    format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(195, 177, 150);
+  /* cursor: url(); */
+}
+a {
+  color: dark-grey;
+}
+a:hover {
+  color: grey;
+}
+
+body {
+  margin: 0em;
+  padding: 2em;
+  line-height: 1;
+  /*   cursor: none; */
+  overflow-x: hidden; /* For Opera */
+
+  /*   morning */
+  /*   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+
+  /*   evening
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); */
+
+  /*   night
+background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%); */
+
+  /* 	-webkit-box-shadow:
+		inset 0 0 2em 2em gainsboro;
+	-moz-box-shadow:
+		inset 0 0 2em 2em gainsboro;
+
+	box-shadow:
+		inset 0 0 2em 2em gainsboro; */
+}
+
+/* #cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 60;
+  pointer-events: none;
+} */
+
+br {
+  display: block;
+  margin: 1px 0;
+}
+
+button:focus { outline: thin dotted; }
+
+
+
+
+.rules {
+  display: block;
+  position: inline;
+  z-index: 2;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  widows: 2;
+  orphans: 2;
+  hyphens: none;
+  top: 8px;
+  padding-left: 29vw;
+/*   font-size: 17px; */
+  font-size: min(max(17px, 1vw), 22px);
+  font-family: bookman-jf-pro, serif;
+  font-weight: 100;
+  font-style: normal;
+  width:100vw; /* Matches to the Viewport Width */
+   height:auto;
+   max-width:40% !important;
+  animation: fadeIn ease 18s;
+}
+
+
+
+img[alt*="web-title"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+  padding-left: 14.6vw;
+  align-self: center;
+  flex-shrink: 0;
+  z-index: -3px;
+  width:80vw; /* Matches to the Viewport Width */
+   height:auto;
+   max-width:100% !important;
+  animation: fadeIn ease 10s;
+}
+
+.check-in-begin {
+  font-family: "EB Garamond", serif;
+}
+
+.enter {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  max-width: 42vw;
+  min-width: 10px;
+  text-align: center;
+  padding-left: 28%;
+  padding-top: px;
+  animation: fadeIn ease 20s;
+}
+#divMsg-in{
+  background-image: linear-gradient(135deg, rgb(244, 237, 190) 0%, rgb(222, 214, 165) 100%);
+  /* border: solid 2px white; */
+  height: 250px;
+  width: 200px;
+  text-align: left;
+  display: block;
+  padding: 0.85rem;
+  position: absolute;
+  font-family: bookman-jf-pro, serif;
+  font-size: 12px !important;
+  color: black;
+  transform: rotate(-2deg);
+  box-shadow: 10px 10px 17px 0px rgba(0, 0, 0.1, 0.1);
+  z-index: 999;
+  top: 10%;
+  font-weight: lighter !important;
+  animation: fadeIn 1s;
+}
+#reflection-copy {
+   font-family: "EB Garamond", monospace;
+   color: white;
+   font-size: 16px;
+ }
+.dog{
+  font-family: monospace;
+  color: white;
+}
+
+#day-time {
+display: block !imporant;
+  position: relative !imporant;
+  align-items: center !imporant;
+  justify-content: center !imporant;
+  text-align: center !imporant;
+  line-height: 4px;
+  text-align: center;
+  font-size: 18px;
+  font-family: bookman-jf-pro, serif;
+  font-weight: 400;
+  font-size: 15px;
+  z-index: 3px;
+  animation: fadeIn ease 7s;
+}
+
+span {
+  font-family: "schoolbook", monospace;
+}
+
+textarea {
+  border: 1px solid #cacaca;
+  -webkit-appearance: none;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+  color: !important white;
+}
+
+input {
+  text-rendering: auto;
+  color: -internal-light-dark-color(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  background-color: -internal-light-dark-color(white, black);
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 11px monospace;
+}
+
+#no-mobile {
+  display: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40%;
+  font-family: bookman-jf-pro, serif;
+  font-size: 15px;
+}
+
+.done button {
+  border: 1px solid white;
+  padding: 1px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.done button:hover {
+  background-color: #E5DBD1;
+  color: #9F9F9F;
+}
+
+#mute-b button {
+  border: 1px solid white;
+  padding: 1px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  line-height: 15px;
+}
+
+.back-to-exhibition input {
+  border: 1px solid white;
+  padding: 1px 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif !important;
+  line-height: 15px;
+}
+
+.instructions input {
+  border: 1px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif !important;
+  line-height: 15.2px;
+  align-content: flex-end !important;
+  float: right !important;
+}
+
+.instructions input:hover {
+  background-color: #E5DBD1;
+  color: #9F9F9F;
+}
+
+
+#mute-b button:hover {
+  background-color: #E5DBD1;
+  color: #9F9F9F;
+}
+
+input[value=about]:hover {
+  background-color: #E5DBD1;
+  color: #9F9F9F;
+}
+
+::placeholder {
+  color: #E5DBD1;
+}
+
+header {
+  display: inline-flex;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+ input[type=checkbox] {
+
+  text-decoration: none;
+  cursor: pointer;
+        }
+
+
+
+/* check-in */
+
+.sit {
+  display: none;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+#breath {
+  display: none;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+#lotus:checked ~ .sit {
+  display: inline-block;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+.breath {
+  display: none;
+  animation: fadeIn ease 2s;
+}
+
+#sit:checked ~ .breath {
+  display: inline-block;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+.eyes {
+  display: none;
+  animation: fadeIn ease 2s;
+}
+
+#breath:checked ~ .eyes {
+  display: inline-block;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+.done {
+  display: none;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+#eyes:checked ~ .done {
+  display: inline-block;
+  font-family: "EB Garamond", serif;
+  animation: fadeIn ease 2s;
+}
+
+/* animation */
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Laptop Capabilities */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+
+/* -------------Laptops-------------------- */
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}

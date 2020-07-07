@@ -1,0 +1,321 @@
+<!-- This the freewrite and questions -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<!-- Form to type -->
+
+<head>
+
+  <script language="Javascript">
+    function download(filename, text) {
+      var pom = document.createElement('a');
+      pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+
+        encodeURIComponent(text));
+      pom.setAttribute('download', filename);
+
+      pom.style.display = 'none';
+      document.body.appendChild(pom);
+
+      pom.click();
+
+      document.body.removeChild(pom);
+    }
+
+    function addTextHTML() {
+      document.addtext.name.value = document.addtext.name.value + ".html"
+    }
+
+    function addTextTXT() {
+      document.addtext.name.value = document.addtext.name.value + ".txt"
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <script type="text/javascript">
+        function showHideDiv(ele) {
+          var srcElement = document.getElementById(ele);
+          if (srcElement != null) {
+            if (srcElement.style.display == "block") {
+              srcElement.style.display = "none";
+            } else {
+              srcElement.style.display = "block";
+            }
+            return false;
+          }
+        }
+      </script>
+    <div class="instructions">
+      <input type="button" value="instructions" onclick="showHideDiv('divMsg-in')">
+
+      <div id="divMsg-in">
+        <p>
+
+
+          When saving writing as an HTML file,
+          use the <a href="https://www.w3schools.com/tags/tag_br.asp">HTML tag, &lt;/br&gt;</a> to add line breaks.
+          <br><br>
+          <strong>Example:</strong><br><br>I had a great day today &lt;br&gt;
+          I went on a run &lt;br&gt;&lt;/br&gt;
+          and had a big breakfast.
+          <br><br>
+          <b><strong>Output:</strong></b>
+          <br><br>
+          I had a great day today <br>
+          I went on a run
+          <br></br>
+          <br>
+          and had a big breakfast.
+        </p>
+
+      </div>
+  </header>
+
+
+  <!-- reflections -->
+
+  <i>
+    <div id="reflection" bis_skin_checked="1"></div>
+  </i>
+  <!-- reflections -->
+
+  <!--   form to type -->
+  <div id="type-reflections">
+    <form name="addtext" onsubmit="download(this['name'].value, this['text'].value)">
+
+
+      <textarea value="10" cols="40" name="text" placeholder="Start writing.." style="white-space:pre-line;"></textarea>
+      <br>
+      <input type="text" name="name" value="" placeholder="File Name">
+      <input type="submit" onclick="addTextHTML();" value="Save As HTML">
+      <div id="reflection-copy">
+
+        <p>
+          <br></br>
+          ➭ save your notes as a .html file for yourself, or return to the main page when finished
+        </p>
+        <p>
+          ➭ your writing is never archived on our end
+          <br></br>
+        </p>
+      </div>
+    </form>
+    <!--   toggle to check out -->
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block')
+          e.style.display = 'none';
+        else
+          e.style.display = 'block';
+      }
+    </script>
+    <!--   toggle to check out -->
+
+    <button onclick="toggle_visibility('foo');">I'm done</button>
+    <div id="foo" class="dog">
+      <div>
+
+        <p><br></br>➭ return to home? <br></br>➭ your reflection isn't saved</p>
+      </div>
+
+      <input type="checkbox" id="lotus">
+
+
+      <div class="sit">
+        <div class="return-to-home">
+          <br> <button onclick="window.location.href='https://hunsingerje.github.io/class-site/';">return</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      var d = new Date(),
+        month = d.getMonth() + 1,
+        date = d.getDate(),
+        year = d.getFullYear(),
+        months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        days = ['Sunday,', 'Monday,', 'Tuesday,', 'Wednesday,', 'Thursday,', 'Friday,', 'Saturday,'];
+      area = document.getElementsByTagName("textarea")[0];
+
+      area.value = days[d.getDay()] + " " + months[d.getMonth()] + " " + date + "," + " " + year + " " + "</br>";
+    </script>
+
+
+  </div>
+  <!-- Form to type -->
+  <style>
+    #foo {
+      display: none;
+    }
+
+    .sit {
+      display: none;
+      font-family: "EB Garamond", serif;
+      animation: fadeIn ease 2s;
+    }
+
+    #breath {
+      display: none;
+      font-family: "EB Garamond", serif;
+      animation: fadeIn ease 2s;
+    }
+
+    #lotus:checked~.sit {
+      display: inline-block;
+      font-family: "EB Garamond", serif;
+      animation: fadeIn ease 2s;
+    }
+
+    /*  checking  */
+    input {
+      border: 1px solid white;
+      padding: 1px 4px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: transparent;
+      /*   color: #98928B; */
+      color: white;
+    }
+
+    input:hover {
+      background-color: #E5DBD1;
+      color: #919191;
+    }
+
+    input[type=text] {
+      color: white;
+      font-family: arial, helvetica, sans-serif;
+      white-space: pre-wrap;
+    }
+
+    input[type=text]:hover {
+      color: #919191;
+    }
+
+    textarea {
+      background-color: transparent;
+      border: 1px solid white !important;
+      resize: none;
+      color: #fff6ed;
+      width: 50vw;
+      height: 500px;
+      padding: 5px;
+      cursor: text;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      margin: 0em;
+      font-family: monospace;
+      font-size: 14px;
+      overflow: scroll;
+    }
+
+    #type-reflections {
+      display: block;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 1%;
+    }
+
+    #reflection {
+      display: grid;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 7%;
+      z-index: -1px;
+      font-family: sans-serif;
+      font-size: min(max(1px, 3vw), 18px);
+    }
+
+    .return-to-home button {
+      border: 1px solid white;
+      padding: 1px 4px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: transparent;
+      color: #EDEDED;
+    }
+
+    .return-to-home button:hover {
+      background-color: #E5DBD1;
+      color: #9F9F9F;
+    }
+
+    button {
+      border: 1px solid white;
+      padding: 1px 4px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: transparent;
+      color: #EDEDED;
+    }
+
+    button:hover {
+      background-color: #E5DBD1;
+      color: #9F9F9F;
+    }
+
+    input[type=button]:focus {
+      outline: thin dotted;
+    }
+
+
+    #day-time-enter {
+      display: block !imporant;
+      position: relative !imporant;
+      align-items: center !imporant;
+      justify-content: center !imporant;
+      text-align: center !imporant;
+      line-height: 4px;
+      text-align: center;
+      font-size: 18px;
+      font-family: bookman-jf-pro, serif;
+      font-weight: 400;
+      font-size: 15px;
+      z-index: 3px;
+      top: 10%;
+      left: 45%;
+    }
+
+    #reflection-copy {
+      font-family: "EB Garamond", serif;
+      font-size: 17px;
+    }
+  </style>
+
+  <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+  <!--     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div> -->
+</body>
+
+<head>
+  <title>for you</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="styleF.css">
+  <link rel="icon" href="favicon.ico" type="image/ico">
+
+
+</head>
+
+
+
+</html>
