@@ -25,3 +25,6 @@ a:hover{
   font-size: 2em;
   /* border: 1px solid black; */
 }
+.letter{
+  transform: scale(0.3);
+}
