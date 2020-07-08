@@ -17,6 +17,7 @@ a:hover{
   transition: 2s ease;
   font-size: 2.1rem;
 }
+
 span{
   position: absolute;/*it can be fixed too*/
   left:0;
@@ -79,7 +80,7 @@ span{
   transform: scale(0.25);
 }
 p{
-  z-index:1
+  z-index:2
   position: absolute;/*it can be fixed too*/
   left:0;
   right:0;
@@ -127,6 +128,9 @@ div:hover{
 
 }
 #eight{
+  display:none;
+}
+#nine{
   display:none;
 }
 
