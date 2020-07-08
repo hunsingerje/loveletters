@@ -1,5 +1,6 @@
 html{
   background-color: rgb(242, 237, 212, 0.7);
+  font-family: 'Inconsolata', serif;
 }
 *{
   box-sizing: border-box;
@@ -46,6 +47,7 @@ span{
   transform: scale(0.2);
   opacity: 50%;
   animation: fadeIn 15s ease;
+  z-index: 0;
 
   /* border: 1px solid black; */
 }
@@ -67,6 +69,7 @@ span{
   opacity: 50%;
   animation-delay: 2s;
   animation: fadeIn 25s ease;
+  z-index: 0;
 
   /* border: 1px solid black; */
 }
@@ -76,6 +79,7 @@ span{
   transform: scale(0.25);
 }
 p{
+  z-index:1
   position: absolute;/*it can be fixed too*/
   left:0;
   right:0;
@@ -83,12 +87,12 @@ p{
   bottom:0;
   height:600px;
   width:400px;
-  padding:10px;
+  padding:30px;
   margin: auto;
   text-align:center;
   word-wrap: normal;
   overflow:scroll;
-  font-size: 1.5em;
+  font-size: 1.3em;
   border: 2px solid black;
   background:rgb(242, 237, 212, 0.9);
   cursor:pointer;
