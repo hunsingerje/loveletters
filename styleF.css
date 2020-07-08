@@ -6,14 +6,16 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(195, 177, 150);
+  background-color: rgb(242, 237, 212, 0.7);
   /* cursor: url(); */
 }
 a {
-  color: dark-grey;
+  rgb(0, 0, 106);
+  text-decoration: none;
 }
 a:hover {
-  color: grey;
+  color: red;
+
 }
 
 body {
@@ -58,7 +60,7 @@ br {
   margin: 1px 0;
 }
 
-button:focus { outline: thin dotted; }
+button:focus { outline: thin black; }
 
 
 
@@ -126,15 +128,15 @@ img[alt*="web-title"] {
 #divMsg-in{
   background-image: linear-gradient(135deg, rgb(244, 237, 190) 0%, rgb(222, 214, 165) 100%);
   /* border: solid 2px white; */
-  height: 250px;
+  height: 100px;
   width: 200px;
   text-align: left;
   display: block;
   padding: 0.85rem;
   position: absolute;
-  font-family: bookman-jf-pro, serif;
-  font-size: 12px !important;
-  color: black;
+  font-family: bookman-jf-pro, monospace;
+  font-size: 11px !important;
+  color: rgb(0, 0, 77);
   transform: rotate(-2deg);
   box-shadow: 10px 10px 17px 0px rgba(0, 0, 0.1, 0.1);
   z-index: 999;
@@ -144,12 +146,12 @@ img[alt*="web-title"] {
 }
 #reflection-copy {
    font-family: "EB Garamond", monospace;
-   color: white;
+   color: black;
    font-size: 16px;
  }
 .dog{
   font-family: monospace;
-  color: white;
+  color: black;
 }
 
 #day-time {
@@ -170,20 +172,21 @@ display: block !imporant;
 
 span {
   font-family: "schoolbook", monospace;
+  color:black;
 }
 
 textarea {
-  border: 1px solid #cacaca;
+  border: 1px solid black;
   -webkit-appearance: none;
   padding: 5px;
   border-radius: 3px;
   outline: none;
-  color: !important white;
+  color: !important black;
 }
 
 input {
   text-rendering: auto;
-  color: -internal-light-dark-color(black, white);
+  color: -internal-light-dark-color(black);
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -191,7 +194,7 @@ input {
   text-shadow: none;
   display: inline-block;
   text-align: start;
-  background-color: -internal-light-dark-color(white, black);
+  background-color: -internal-light-dark-color(black);
   -webkit-rtl-ordering: logical;
   cursor: text;
   margin: 0em;
@@ -209,50 +212,41 @@ input {
 }
 
 .done button {
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 1px 4px;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
-  color: white;
+  color: black;
 }
 
 .done button:hover {
-  background-color: #E5DBD1;
-  color: #9F9F9F;
+  background-color: grey;
+  color: black;
 }
 
-#mute-b button {
-  border: 1px solid white;
-  padding: 1px 4px;
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  line-height: 15px;
-}
+
 
 .back-to-exhibition input {
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 1px 4px;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
-  color: white;
+  color: black;
   font-family: sans-serif !important;
   line-height: 15px;
 }
 
 .instructions input {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
-  color: white;
+  color: black;
   font-family: sans-serif !important;
   line-height: 15.2px;
   align-content: flex-end !important;
@@ -260,23 +254,20 @@ input {
 }
 
 .instructions input:hover {
-  background-color: #E5DBD1;
-  color: #9F9F9F;
+  background-color: #c9c9c9;
+  color: rgb(79, 79, 79);
 }
 
 
-#mute-b button:hover {
-  background-color: #E5DBD1;
-  color: #9F9F9F;
-}
+
 
 input[value=about]:hover {
-  background-color: #E5DBD1;
-  color: #9F9F9F;
+  background-color: grey;
+  color: black;
 }
 
 ::placeholder {
-  color: #E5DBD1;
+  color: rgb(0, 0, 0,0.3);
 }
 
 header {
@@ -302,6 +293,7 @@ header {
   font-family: "EB Garamond", serif;
   animation: fadeIn ease 2s;
 }
+
 
 #breath {
   display: none;

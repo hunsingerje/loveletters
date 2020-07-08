@@ -5,34 +5,81 @@
   <title>love letters</title>
   <meta charset="utf-8">
   <link rel="icon" href="favicon.ico" type="image/ico">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="style.css">
   <style>
-   .draggable { width: 170px; height: 550px; padding: 0.65em; }
+    .draggable {
+      width: 70px;
+      height: 100px;
+      padding: 0.65em;
+      position: absolute;/*it can be fixed too*/
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      margin: auto;
+      transform: scale(0.5);
+    }
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-  $( function() {
-    $( ".draggable" ).draggable();
-  } );
+    $(function() {
+      $(".draggable").draggable();
+    });
   </script>
 
 </head>
 
 <body>
-  <div class= "letter ui-widget-content draggable">
-    <a href="freewrite.html"><img class="letter" src="envelope.png" href="#" data-toggle="tooltip" title="empowerment"></a>
-    <br></br>
-    <a href="freewrite.html"><img class="letter" src="envelope.png" href="#" data-toggle="tooltip" title="devotion"></a>
-    <br></br>
-    <a href="freewrite.html"><img class="letter" src="envelope.png" href="#" data-toggle="tooltip" title="heartbreak"></a>
-    <br></br>
-    <a href="freewrite.html"><img class="letter" src="envelope.png" href="#" data-toggle="tooltip" title="cynicism"></a>
-    <br></br>
-    <a href="freewrite.html"><img class="letter" src="envelope.png" href="#" data-toggle="tooltip" title="for you"></a>
-    <br></br>
+
+<div class="envelope1" href="#" data-toggle="tooltip" title="love">
+
+<input type="image" src="envelope.png" onclick="RandomDiv();">
+  <script>
+  function RandomDiv() {
+  var myarray= new Array("one","two","three","four","five","six","seven","eight");
+  var ChosenDiv = myarray[Math.floor(Math.random() * myarray.length)];
+  // alert(ChosenDiv); //Just to show this.
+  document.getElementById(ChosenDiv).style.display="block";
+}
+  </script>
+
+</div>
+  <div class="ui-widget-content draggable" id="one">
+  <p>hello</p>
   </div>
+  <div class="ui-widget-content draggable" id="two">
+  <p>hello</p>
+  </div>
+  <div class="ui-widget-content draggable" id="three">
+  <p>hello</p>
+  </div>
+  <div class="ui-widget-content draggable" id="four" href="#" data-toggle="tooltip" title="for you">
+  <a href="freewrite.html">✎</a>
+  </div>
+  <div class="ui-widget-content draggable" id="five">
+  <p>hello</p>
+  </div>
+  <div class="ui-widget-content draggable" id="six">
+  <p>hello</p>
+  </div>
+  <div class="ui-widget-content draggable" id="seven">
+  <p>hello</p>
+  </div>
+
+
+  <div class="envelope2" href="#" data-toggle="tooltip" title="for you">
+
+  <input type="image" src="envelope.png" onclick="RandomDiv();">
+    <script>
+    function RandomDiv() {
+    var myarray= new Array("one","two","three","four","five","six","seven","eight");
+    var ChosenDiv = myarray[Math.floor(Math.random() * myarray.length)];
+    // alert(ChosenDiv); //Just to show this.
+    document.getElementById(ChosenDiv).style.display="block";
+  }
+    </script>
+</div>
 
 
 </body>

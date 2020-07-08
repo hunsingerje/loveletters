@@ -11,8 +11,10 @@ a{
 a:hover{
   color:red;
   cursor:pointer;
+  transition: 0.5s ease;
 }
-.container{
+
+.envelope1{
   position: absolute;/*it can be fixed too*/
   left:0;
   right:0;
@@ -21,10 +23,77 @@ a:hover{
   height:90px;
   width:140px;
   margin: auto;
-  text-align: center;
-  font-size: 2em;
+  transform: scale(0.3);
+  opacity: 30%;
+
   /* border: 1px solid black; */
 }
-.letter{
+.envelope1:hover{
+  opacity: 100%;
+}
+.envelope2{
+  position: absolute;/*it can be fixed too*/
+  left:400px;
+  right:0;
+  top:60px;
+  bottom:10;
+  height:90px;
+  width:140px;
+  margin: auto;
   transform: scale(0.3);
+  opacity: 30%;
+
+  /* border: 1px solid black; */
+}
+.envelope2:hover{
+  opacity: 100%;
+}
+p{
+  position: absolute;/*it can be fixed too*/
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  height:auto;
+  width:200px;
+  margin: auto;
+  text-align:center;
+  word-wrap: normal;
+  overflow:scroll;
+  font-size: 2em;
+  border: 2px solid black;
+  background-color: rgb(255, 252, 228,0.6)
+  cursor:pointer;
+}
+div:hover{
+  cursor:pointer;
+}
+
+#one {
+    display:none;
+}
+
+#two {
+    display:none;
+}
+
+#three {
+    display:none;
+}
+#four {
+    display:none;
+    transform:scale(7);
+}
+#five {
+    display:none;
+}
+#six {
+    display:none;
+}
+#seven {
+    display:none;
+
+}
+#eight{
+  display:none;
 }
