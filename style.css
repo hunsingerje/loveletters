@@ -45,7 +45,7 @@ span{
   margin: auto;
   transform: scale(0.2);
   opacity: 50%;
-  animation: fadeIn 8s ease;
+  animation: fadeIn 15s ease;
 
   /* border: 1px solid black; */
 }
@@ -66,7 +66,7 @@ span{
   transform: scale(0.2);
   opacity: 50%;
   animation-delay: 2s;
-  animation: fadeIn 15s ease;
+  animation: fadeIn 20s ease;
 
   /* border: 1px solid black; */
 }
