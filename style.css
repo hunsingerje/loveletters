@@ -7,29 +7,52 @@ html{
 a{
   text-decoration: none;
   color:black;
+  font-size:2rem;
+  text-align: center;
 }
 a:hover{
   color:red;
   cursor:pointer;
-  transition: 0.5s ease;
+  transition: 1s ease;
+  font-size: 2.2rem;
 }
-
-.envelope1{
+span{
   position: absolute;/*it can be fixed too*/
   left:0;
   right:0;
   top:0;
   bottom:0;
+  height:40px;
+  width:70px;
+  margin: auto;
+  opacity:80%;
+}
+.special{
+  font-size: 0.8rem;
+}
+.special:hover{
+  font-size: 1rem;
+}
+
+.envelope1{
+  position: absolute;/*it can be fixed too*/
+  left:0;
+  right:400px;
+  top:50px;
+  bottom:0;
   height:90px;
   width:140px;
   margin: auto;
-  transform: scale(0.3);
-  opacity: 30%;
+  transform: scale(0.2);
+  opacity: 50%;
+  animation: fadeIn 8s ease;
 
   /* border: 1px solid black; */
 }
 .envelope1:hover{
-  opacity: 100%;
+  cursor:pointer;
+  transition: 1s ease;
+  transform: scale(0.25);
 }
 .envelope2{
   position: absolute;/*it can be fixed too*/
@@ -40,13 +63,17 @@ a:hover{
   height:90px;
   width:140px;
   margin: auto;
-  transform: scale(0.3);
-  opacity: 30%;
+  transform: scale(0.2);
+  opacity: 50%;
+  animation-delay: 2s;
+  animation: fadeIn 15s ease;
 
   /* border: 1px solid black; */
 }
 .envelope2:hover{
-  opacity: 100%;
+  cursor:pointer;
+  transition: 1s ease;
+  transform: scale(0.25);
 }
 p{
   position: absolute;/*it can be fixed too*/
@@ -96,4 +123,13 @@ div:hover{
 }
 #eight{
   display:none;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:50%;
+  }
 }
