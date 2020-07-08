@@ -31,7 +31,7 @@ span{
   font-size: 0.8rem;
 }
 .special:hover{
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .envelope1{
@@ -90,7 +90,7 @@ p{
   overflow:scroll;
   font-size: 1.5em;
   border: 2px solid black;
-  background:rgb(255, 255, 255,0.9)
+  background:rgb(242, 237, 212, 0.9);
   cursor:pointer;
 }
 div:hover{
