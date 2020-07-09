@@ -96,10 +96,33 @@ p{
   font-size: 1.3em;
   border: 2px solid black;
   background:rgb(242, 237, 212, 0.9);
-  cursor:pointer;
+  cursor:grab;
 }
 div:hover{
+  cursor:grab;
+}
+.credits{
+  z-index:2
+  position: absolute;/*it can be fixed too*/
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  height:auto;
+  width:auto;
+  padding:30px;
+  margin: auto;
+  text-align:center;
+  word-wrap: normal;
+
+  font-size: 0.8em;
+
+  /* background:rgb(242, 237, 212, 0.9); */
   cursor:pointer;
+}
+h1{
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 #one {
@@ -132,6 +155,12 @@ div:hover{
 }
 #nine{
   display:none;
+}
+#opacity1{
+  opacity:85%;
+}
+#opacity2{
+  opacity:85%;
 }
 
 @keyframes fadeIn{
