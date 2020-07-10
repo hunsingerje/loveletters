@@ -126,7 +126,7 @@ h1{
 }
 
 .back{
-  transform: scale(2);
+  transform: scale(2.5);
   display: inline-block;
   position: fixed;
   bottom: 20px;
