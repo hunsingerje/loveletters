@@ -138,6 +138,10 @@ h1{
   font-size:1em;
   opacity:90%;
 }
+.link:hover{
+  transition: 2s ease;
+  font-size: 2em;
+}
 
 }
 
