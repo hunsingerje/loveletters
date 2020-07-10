@@ -132,7 +132,6 @@ h1{
   bottom: 20px;
   left:20px;
 
-
 }
 .link{
   font-size:1em;
@@ -140,7 +139,7 @@ h1{
 }
 .link:hover{
   transition: 2s ease;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 
